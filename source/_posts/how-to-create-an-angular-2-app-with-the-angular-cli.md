@@ -1,12 +1,11 @@
 ---
 title: How to create an Angular 2 app with the angular-cli
 date: 2017/02/09 12:00
-authorIds: 
-- tommynguyen
+author: Tommy
 categories:
-- dev 
+  - dev
 tags:
-- Angular 2
+  - Angular 2
 ---
 ## How to create an Angular 2 app with the [angular-cli](https://cli.angular.io/)
 

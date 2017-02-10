@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-layout: static
+layout: page
 comments: false
 ---
 Welcome to [Super Simple Tutorials](https://supersimpletutorials.com), where we share simple, easy-to-follow tutorials for developers, makers, and doers. 
