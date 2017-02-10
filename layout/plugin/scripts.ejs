@@ -14,6 +14,9 @@
     <% if (theme.plugins.baidu_analytics) { %>
         <%- partial('plugin/baidu-analytics') %>
     <% } %>
+    <% if (theme.plugins.typekit_id) { %>
+        <%- partial('plugin/typekit') %>
+    <% } %>
 <% } else { %>
     <% if (theme.plugins.lightgallery) { %>
         <%- js('libs/lightgallery/js/lightgallery.min') %>
