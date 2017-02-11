@@ -12,16 +12,16 @@ timezone: America/New_York
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://hexo.supersimpletutorials.com
+url: https://supersimpletutorials.com
 root: /
-permalink: :category/:title/
+permalink: tutorials/:category/:title/
 permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: tutorials
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -69,3 +69,9 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 
+
+# Blog Generator
+blog_generator:
+  path: tutorials
+  per_page: 10
+  order_by: -date
