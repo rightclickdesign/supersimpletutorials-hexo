@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prestart": "source config/env.rc",
     "start": "hexo server",
-    "update-theme": "git -C themes/icarus/ pull",
     "predeploy": "hexo clean",
     "deploy": "hexo generate",
     "postdeploy": "firebase deploy"
