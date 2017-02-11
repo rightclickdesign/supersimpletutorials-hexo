@@ -6,7 +6,7 @@
     "prestart": "source config/env.rc",
     "start": "hexo server",
     "predeploy": "hexo clean",
-    "deploy": "hexo generate",
+    "deploy": "NODE_ENV=production hexo generate",
     "postdeploy": "firebase deploy"
   },
   "hexo": {

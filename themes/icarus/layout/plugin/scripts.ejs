@@ -5,7 +5,7 @@
     <% if (theme.plugins.justifiedgallery) { %>
         <%- css('libs/justified-gallery/justifiedGallery.min.css') %>
     <% } %>
-    <% if (theme.plugins.google_analytics) { %>
+    <% if (theme.plugins.google_analytics && process.env.NODE_ENV === 'production') { %>
         <%- partial('plugin/google-analytics') %>
     <% } %>
     <% if (theme.plugins.google_site_verification) { %>
