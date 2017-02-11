@@ -86,3 +86,7 @@ popularPosts:
 author_generator:
   url_map:
     "Tommy Nguyen": tommy-nguyen
+
+# Sitemap
+sitemap:
+    path: sitemap.xml
