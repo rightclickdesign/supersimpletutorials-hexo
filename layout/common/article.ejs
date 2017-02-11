@@ -32,6 +32,14 @@
             <%- post.content %>
         <% } %>
         </div>
+        <div class="article-related-posts">
+            <hr>
+            <%-
+                htmlGenerator( 
+                    popular_posts_json({ maxCount: 5 , ulClass: 'popular-posts' })
+                )
+            %>
+        </div>
         <footer class="article-footer">
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
