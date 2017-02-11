@@ -47,7 +47,7 @@
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
             <% if (post.layout != 'static') { %>
-                <%- post.author %>
+                <a href="/authors/<%- config.author_generator.url_map[post.author] %>" class="article-author-link"><i class="fa fa-user"></i><%- post.author %></a>
             <% } %>
         </footer>
     </div>
