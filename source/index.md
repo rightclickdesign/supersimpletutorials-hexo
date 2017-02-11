@@ -15,4 +15,4 @@ The Super Simple Tutorials Team <i id="footer-heart" class="fa fa-heart" aria-hi
 
 ---
 
-By the way, here's how [a tutorial about Angular 2](/dev/how-to-create-an-angular-2-app-with-the-angular-cli/) will look.
+By the way, here's how [a tutorial about Angular 2](/tutorials/dev/how-to-create-an-angular-2-app-with-the-angular-cli/) will look.
