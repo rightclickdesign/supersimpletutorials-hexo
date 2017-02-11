@@ -35,6 +35,9 @@
         <footer class="article-footer">
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
+            <% if (post.layout != 'static') { %>
+                <%- post.author %>
+            <% } %>
         </footer>
     </div>
     <% if (!index) { %>
