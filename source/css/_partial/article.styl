@@ -415,3 +415,65 @@ ol.toc
 .lg-outer
     .lg-thumb-item
         border-radius: 0 !important
+
+.popular-posts
+    @extend $base-style
+    line-height: line-height
+    word-wrap: break-word
+    ul, ol
+        list-style: none
+        margin: 0
+        ul, ol
+            margin: 0 20px
+        ul
+            list-style: disc
+        ol
+            list-style: decimal
+
+.popular-posts-wrap
+    margin: block-margin 10px
+    @media mq-mini
+        margin: block-margin 20px
+
+.popular-posts-title
+    @extend $block-caption
+    padding: 15px 0
+
+.popular-posts
+    padding: 5px 15px
+    a
+        color: color-sidebar-text
+        text-decoration: none
+        &:hover
+            color: color-sidebar-text-dark
+    ul, ol, dl
+        ul, ol, dl
+            margin-left: 15px
+            list-style: disc
+    ul, ol
+        list-style: none
+        li,
+        .category-list-child
+            padding: 4px 0
+            font-size: font-size
+            border-bottom: 1px solid border-color
+            a
+                color: color-link
+        ul, ol
+            list-style: none
+            li
+                border: none
+                &:last-child
+                    padding-bottom: 0px
+    ul:not(#recent-post), ol:not(#recent-post)
+        li
+            a
+                &:before
+                    color: #ccc
+                    content: "\f0da"
+                    font-size: 12px
+                    margin-right: 6px
+                    font-family: FontAwesome
+                    transition: 0.2s ease
+                &:hover:before
+                    color: color-sidebar-text-dark
