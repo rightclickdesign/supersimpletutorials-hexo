@@ -1,7 +1,8 @@
 ---
 title: Coming Soon!
-layout: page
+layout: static
 comments: false
+author: Tommy Nguyen
 ---
 Welcome to [Super Simple Tutorials](https://supersimpletutorials.com), where we share simple, easy-to-follow tutorials for developers, makers, and doers. 
 
