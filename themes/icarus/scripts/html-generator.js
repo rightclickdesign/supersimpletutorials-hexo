@@ -28,7 +28,7 @@ hexo.extend.helper.register('htmlGenerator', function(args){
       returnHTML += generateHTML(args.json[i]);
   }
 
-  if(returnHTML != "")returnHTML = "<ul class=\"" + args.class + "\">" + returnHTML + "</ul>";
+  if(returnHTML != "")returnHTML = "<hr><h2 class=\"popular-posts-title\">Related Tutorials</h2><ul class=\"" + args.class + "\">" + returnHTML + "</ul>";
 
   return returnHTML;
 });

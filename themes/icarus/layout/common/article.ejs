@@ -35,10 +35,6 @@
         <% if (!index) { %>
             <div class="popular-posts-wrap popular-posts-list">
                 <div class="popular-posts">
-                    <hr>
-                    <h2 class="popular-posts-title">
-                        Related Tutorials
-                    </h2>
                     <%-
                         htmlGenerator( 
                             popular_posts_json({ maxCount: 5 , PPMixingRate: 0.0, ulClass: 'popular-posts-ul', isDate: false })
