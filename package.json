@@ -3,10 +3,13 @@
   "version": "0.0.2",
   "private": true,
   "scripts": {
+    "clean": "hexo clean",
+    "pregenerate": "npm run clean",
+    "generate": "NODE_ENV=production hexo generate",
     "prestart": "source config/env.rc",
     "start": "hexo server",
-    "predeploy": "hexo clean",
-    "deploy": "NODE_ENV=production hexo generate",
+    "predeploy": "npm run clean",
+    "deploy": "npm run generate",
     "postdeploy": "firebase deploy"
   },
   "hexo": {
