@@ -75,3 +75,9 @@ blog_generator:
   path: tutorials
   per_page: 10
   order_by: -date
+
+# Related Posts Generator
+popularPosts:
+  morphologicalAnalysis:
+  googleAnalyticsAPI:
+    dateRange: 30
