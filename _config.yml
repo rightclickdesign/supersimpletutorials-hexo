@@ -109,7 +109,6 @@ hfc_css:
 hfc_js:
   enable: true
   mangle: false
-  output:
   compress:
   exclude: 
     - '*.min.js'
@@ -156,6 +155,10 @@ beautify:
     indent_inner_html: false
     indent_size: 2
     indent_with_tabs: false
+    brace-style: expand
+    unformatted: 
+      - script
+      - style
     # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
   css:
     indent_size: 2
