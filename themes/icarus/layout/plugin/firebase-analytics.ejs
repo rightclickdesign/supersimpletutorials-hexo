@@ -1,0 +1,12 @@
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "<%= theme.plugins.firebase_analytics.apiKey %>",
+    authDomain: "<%= theme.plugins.firebase_analytics.authDomain %>",
+    databaseURL: "<%= theme.plugins.firebase_analytics.databseURL %>",
+    storageBucket: "<%= theme.plugins.firebase_analytics.storageBucket %>",
+    messagingSenderId: "<%= theme.plugins.firebase_analytics.messagingSenderId %>"
+  };
+  firebase.initializeApp(config);
+</script>

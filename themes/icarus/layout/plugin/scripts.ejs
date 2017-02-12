@@ -18,6 +18,9 @@
         <%- partial('plugin/typekit') %>
     <% } %>
 <% } else { %>
+    <% if (theme.plugins.firebase_analytics.enable && process.env.NODE_ENV === 'production') { %>
+        <%- partial('plugin/firebase-analytics') %>
+    <% } %>
     <% if (theme.plugins.lightgallery) { %>
         <%- js('libs/lightgallery/js/lightgallery.min') %>
         <%- js('libs/lightgallery/js/lg-thumbnail.min') %>
