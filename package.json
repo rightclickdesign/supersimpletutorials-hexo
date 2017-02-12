@@ -8,9 +8,8 @@
     "generate": "NODE_ENV=production hexo generate",
     "prestart": "source config/env.rc",
     "start": "hexo server",
-    "predeploy": "npm run clean",
-    "deploy": "npm run generate",
-    "postdeploy": "firebase deploy"
+    "predeploy": "npm run generate",
+    "deploy": "firebase deploy"
   },
   "hexo": {
     "version": "3.2.2"
