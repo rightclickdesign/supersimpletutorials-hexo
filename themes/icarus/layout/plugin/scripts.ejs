@@ -17,6 +17,9 @@
     <% if (theme.plugins.typekit_id) { %>
         <%- partial('plugin/typekit') %>
     <% } %>
+    <% if (theme.plugins.gosquared_analytics.enable) { %>
+        <%- partial('plugin/gosquared-analytics') %>
+    <% } %>
 <% } else { %>
     <% if (theme.plugins.firebase_analytics.enable && process.env.NODE_ENV === 'production') { %>
         <%- partial('plugin/firebase-analytics') %>
