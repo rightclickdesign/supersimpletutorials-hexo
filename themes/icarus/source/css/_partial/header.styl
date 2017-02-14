@@ -182,15 +182,18 @@ $nav-link
         clearfix()
         margin: 0
         height: header-sub-height
-        .search-form-input
-            display: none
-            @media mq-mini
-                display: block
-            padding: 0 10px
-            margin-right: 15px
-            height: header-sub-height - 16
-            line-height: header-sub-height - 16
-            border-radius: ((header-sub-height - 16)/2)
-            &::-webkit-search-results-decoration
-            &::-webkit-search-cancel-button
-                -webkit-appearance: none
+        text-align: center
+        .search-form
+            padding: 0 15px
+            .search-form-input
+                display: none
+                @media mq-mini
+                    display: block
+                width: 100%
+                padding: 0 10px
+                height: header-sub-height - 16
+                line-height: header-sub-height - 16
+                border-radius: ((header-sub-height - 16)/2)
+                &::-webkit-search-results-decoration
+                &::-webkit-search-cancel-button
+                    -webkit-appearance: none
