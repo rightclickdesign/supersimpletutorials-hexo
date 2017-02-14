@@ -17,8 +17,11 @@
     <% if (theme.plugins.baidu_analytics) { %>
         <%- partial('plugin/baidu-analytics') %>
     <% } %>
-    <% if (theme.plugins.gosquared_analytics.enable) { %>
+    <% if (theme.plugins.gosquared_analytics.enable && process.env.NODE_ENV === 'production') { %>
         <%- partial('plugin/gosquared-analytics') %>
+    <% } %>
+    <% if (theme.plugins.heap_analytics.enable && process.env.NODE_ENV === 'production') { %>
+        <%- partial('plugin/heap-analytics') %>
     <% } %>
 <% } else { %>
     <% if (theme.plugins.firebase_analytics.enable && process.env.NODE_ENV === 'production') { %>
