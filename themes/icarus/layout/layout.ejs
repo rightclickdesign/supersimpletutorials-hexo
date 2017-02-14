@@ -1,5 +1,8 @@
 <%- partial('common/head') %>
 <body>
+    <% if (theme.plugins.facebook_sdk) { %>
+        <%- partial('plugin/facebook-sdk') %>
+    <% } %>
     <div id="container">
         <%- partial('common/header') %>
         <div class="outer">

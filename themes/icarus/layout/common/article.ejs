@@ -44,6 +44,7 @@
             </div>
         <% } %>
         <footer class="article-footer">
+            <%- partial('share/facebook-like', { post: post }) %>
             <%- partial('share/index', { post: post }) %>
             <%- partial('comment/counter', { post: post }) %>
             <% if (post.author) { %>
