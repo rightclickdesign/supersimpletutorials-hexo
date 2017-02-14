@@ -32,7 +32,7 @@
             <%- post.content %>
         <% } %>
         </div>
-        <% if (!index) { %>
+        <% if (!(index || page.layout === 'page')) { %>
             <div class="popular-posts-wrap popular-posts-list">
                 <div class="popular-posts">
                     <%-
