@@ -1,4 +1,7 @@
 <% if (typeof(isHead) !== 'undefined' && isHead) { %>
+    <% if (theme.plugins.typekit_id) { %>
+        <%- partial('plugin/typekit') %>
+    <% } %>
     <% if (theme.plugins.lightgallery) { %>
         <%- css('libs/lightgallery/css/lightgallery.min') %>
     <% } %>
@@ -13,9 +16,6 @@
     <% } %>
     <% if (theme.plugins.baidu_analytics) { %>
         <%- partial('plugin/baidu-analytics') %>
-    <% } %>
-    <% if (theme.plugins.typekit_id) { %>
-        <%- partial('plugin/typekit') %>
     <% } %>
     <% if (theme.plugins.gosquared_analytics.enable) { %>
         <%- partial('plugin/gosquared-analytics') %>
