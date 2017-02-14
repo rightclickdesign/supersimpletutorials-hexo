@@ -1,0 +1,6 @@
+<% if (theme.customize.reading_time.enable) { %>
+    <div class="article-reading-time">
+        <i class="fa fa-clock-o"></i>
+        <%- readingTime(page.content, theme.customize.reading_time.suffix || 'min. read') %>
+    </div>
+<% } %>

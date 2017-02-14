@@ -1,0 +1,3 @@
+<% if (post.author) { %>
+    <a href="/authors/<%- config.author_generator.url_map[post.author] %>" class="article-author-link" title="<%- post.author %>"><i class="fa fa-user"></i><%- post.author %></a>
+<% } %>
