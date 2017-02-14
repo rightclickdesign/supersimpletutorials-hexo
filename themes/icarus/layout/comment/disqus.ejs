@@ -3,7 +3,7 @@
         <script>
         var disqus_config = function () {
             <% if (page.permalink) { %>
-                this.page.url = '<%= page.permalink %>';
+                this.page.url = '<%= sanitizeUrl(page.permalink) %>';
             <% } %>
             this.page.identifier = '<%= page.disqusId || page.slug %>';
         };

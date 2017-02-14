@@ -1,4 +1,4 @@
-<a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><i class="fa fa-share"></i><%=__('article.share')%></a>
+<a data-url="<%- sanitizeUrl(post.permalink) %>" data-id="<%= post._id %>" class="article-share-link"><i class="fa fa-share"></i><%=__('article.share')%></a>
 <script>
     (function ($) {
         // Prevent duplicate binding
