@@ -75,6 +75,7 @@ blog_generator:
   path: tutorials
   per_page: 10
   order_by: -date
+  title: Tutorials
 
 # Related Posts Generator
 popularPosts:

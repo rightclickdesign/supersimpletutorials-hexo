@@ -11,7 +11,7 @@
                         <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
                         <%- partial('post/category') %>
                         <%- partial('post/tag') %>
-                        <%- partial('post/reading-time') %>
+                        <%- partial('post/reading-time', { page: post }) %>
                     </div>
                 <% } %>
             </header>

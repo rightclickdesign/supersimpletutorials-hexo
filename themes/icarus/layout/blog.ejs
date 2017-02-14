@@ -1,3 +1,20 @@
+<% var totalReadingTime = 0 %>
+<% page.posts.each(function(post) { %>
+    <% var x = readingTime(post.content) %>
+    <% totalReadingTime += +x[0] %>
+<% }); %>
+<section class="layout-wrap">
+    <div class="layout-title">
+        <span><%= config.blog_generator.title %></span>
+    </div>
+    <div class="layout-wrap-inner">
+        <div>
+            Check out one of our <span class="tutorials-count"><%- site.posts.length %> simple tutorials</span> for developers, makers, and doers. Total reading time is about <span class="tutorials-count"><%- totalReadingTime %> minutes.</span> Have fun!
+        </div>
+
+    </div>
+</section>
+
 <% page.posts.each(function(post) { %>
     <%- partial('common/summary', { post: post, index: true }) %>
 <% });
