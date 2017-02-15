@@ -6,14 +6,14 @@
         <% if (post.link || post.title) { %>
             <header class="article-header">
                 <%- partial('post/title', { class_name: 'article-title' }) %>
-                <% if (!(post.layout === 'page' || index)) { %>
-                    <div class="article-meta">
-                        <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                        <%- partial('post/category') %>
-                        <%- partial('post/tag') %>
+                <div class="article-meta">
+                    <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
+                    <%- partial('post/category') %>
+                    <%- partial('post/tag') %>
+                    <% if (!(index || page.layout === 'page')) { %>
                         <%- partial('post/reading-time') %>
-                    </div>
-                <% } %>
+                    <% } %>
+                </div>
             </header>
         <% } %>
         <%- partial('post/gallery') %>

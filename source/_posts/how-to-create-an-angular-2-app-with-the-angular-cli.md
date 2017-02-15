@@ -18,6 +18,8 @@ cd my-awesome-app
 
 ```
 
+<!-- more -->
+
 ### Run server
 
 ``` bash
