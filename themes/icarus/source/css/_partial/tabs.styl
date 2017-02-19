@@ -1,0 +1,98 @@
+/* -----------------------------------------------------------------------------
+  TABS COMPONENT
+----------------------------------------------------------------------------- */
+/**
+ * Tabs component
+ *
+ * A responsive tabs component that falls back to a linear conent display when
+ * JavaScript is disabled. The following is the default suggested markup to play
+ * nicely with the JavaScript. If you change it up, just make sure you pass in
+ * the correct parameters to the tabs instance.
+ *
+ * <div id="tabs" class="c-tabs no-js">
+ *   <div class="c-tabs-nav">
+ *     <a href="#" class="c-tabs-nav__link is-active"></a>
+ *     <a href="#" class="c-tabs-nav__link"></a>
+ *     ...
+ *   </div>
+ *   <div class="c-tab is-active">
+ *     <div class="c-tab__content"></div>
+ *   </div>
+ *   <div class="c-tab">
+ *     <div class="c-tab__content"></div>
+ *   </div>
+ *   ...
+ * </div>
+ */
+
+*,
+*::before,
+*::after
+    box-sizing inherit
+
+.c-tabs
+    &.no-js
+        .c-tabs-nav
+            display none
+        .c-tab
+            display block
+            &:last-child
+                margin-bottom 0
+
+.c-tabs-nav
+    display -webkit-box
+    display -ms-flexbox
+    display flex
+    border-bottom 1px solid rgb(212, 212, 213)
+
+.c-tabs-nav__link
+    color #565a5f
+    display flex
+    flex 1
+    text-align center
+    align-items center
+    justify-content center
+    padding 14.8571px 0px
+    -webkit-transition color 0.3s
+    transition color 0.3s
+    &.is-active
+        color #565a5f
+        font-weight bold
+        background rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box
+        border-top 1px solid rgb(212, 212, 213)
+        border-right 1px solid rgb(212, 212, 213)
+        border-left 1px solid rgb(212, 212, 213)
+        margin 0px 0px -1px
+        transition background 0.1s ease 0s, box-shadow 0.1s ease 0s, color 0.1s ease 0s
+    &:last-child
+        margin-right 0
+    i
+        font-size 18px
+    span
+        display none
+        font-size 18px
+
+a
+    &.c-tabs-nav__link
+        color #565a5f
+        &:hover
+            text-decoration none
+
+.c-tabs-nav__link i,
+.c-tabs-nav__link span
+    margin 0
+    padding 0
+    line-height 1
+
+@media all and (min-width: 720px)
+    .c-tabs-nav__link
+        i
+            padding-right 10px
+            font-size 22px
+        span
+            display block
+
+.c-tab
+    display none
+    &.is-active
+        display block

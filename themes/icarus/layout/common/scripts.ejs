@@ -3,3 +3,7 @@
 
 <!-- Custom Scripts -->
 <%- js('js/main') %>
+<% if (page.features && page.features.tabs) { %>
+    <%- js('js/tabs') %>
+    <%- js('js/activate-tabs') %>
+<% } %>
