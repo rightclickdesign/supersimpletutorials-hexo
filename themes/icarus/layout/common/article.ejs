@@ -32,6 +32,10 @@
             <% } %>
             <%- post.content %>
         <% } %>
+        <% if (post.features && post.features.license === 'creative-commons') { %>
+            <%- partial('common/license') %>
+        <% } %>
+
         </div>
         <% if (!(index || page.layout === 'page')) { %>
             <div class="popular-posts-wrap popular-posts-list">

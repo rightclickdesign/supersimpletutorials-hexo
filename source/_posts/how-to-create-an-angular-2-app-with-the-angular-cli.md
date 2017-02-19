@@ -6,6 +6,8 @@ categories:
   - dev
 tags:
   - Angular 2
+features:
+  license: creative-commons
 ---
 ## How to create an Angular 2 app with the [angular-cli](https://cli.angular.io/)
 

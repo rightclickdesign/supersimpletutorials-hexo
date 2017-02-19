@@ -7,4 +7,5 @@ tags:
 features:
   tabs: false
   hide_date: false
+  license: creative-commons
 ---
