@@ -1,5 +1,6 @@
-title: "About"
-layout: "page"
+---
+title: About
+layout: page
 comments: false
 author: Tommy Nguyen
 ---
