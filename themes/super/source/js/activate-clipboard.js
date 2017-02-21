@@ -1,20 +1,21 @@
 (function() {
-    var clipboard = new Clipboard('.btn');
+    var clipboard = new Clipboard('.copy.btn');
     clipboard.on('success', function(e) {
         e.clearSelection();
-        $('.copy.btn')
-            .popup('destroy');
         $(e.trigger)
             .popup({
+                on: "manual",
                 content: "Copied!",
-                delay: {
-                    hide: 600
-                },
                 exclusive: true,
-                position: 'top center',
+                position: 'top right',
                 variation: 'mini'
             })
             .popup('show');
+
+        setTimeout(function(){
+            $(e.trigger)
+                .popup('hide');
+        }, 500);
     });
     clipboard.on('error', function(e) {
         console.error('Action:', e.action);
