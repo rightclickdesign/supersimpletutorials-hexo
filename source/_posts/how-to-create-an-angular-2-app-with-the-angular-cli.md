@@ -13,27 +13,29 @@ features:
 
 ### Run these commands
 
-``` bash
-npm install -g angular-cli
+```bash
+npm install -g @angular/cli
 ng new my-awesome-app
 cd my-awesome-app
-
 ```
-
-<!-- more -->
 
 ### Run server
 
-``` bash
+```bash
 ng serve
 ```
 
+The `ng serve` command launches the server, watches your files, and rebuilds the app as you make changes to those files.
+
+Open a browser on `http://localhost:4200/` to see your work.
+
 ### Build for production
 
-``` bash
+```bash
 ng build --prod
 ```
 
 More info: [angular-cli](https://cli.angular.io/)
+More info: [CLI Quickstart](https://angular.io/docs/ts/latest/cli-quickstart.html)
 
 Enjoy!
