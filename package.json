@@ -16,6 +16,7 @@
     "version": "3.2.2"
   },
   "dependencies": {
+    "clipboard": "^1.6.0",
     "hexo": "^3.2.0",
     "hexo-admin": "^2.1.0",
     "hexo-beautify": "^1.0.2",
@@ -32,7 +33,8 @@
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "semantic-ui-button": "^2.2.8"
   },
   "devDependencies": {
     "@types/del": "^2.2.32",
