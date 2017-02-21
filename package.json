@@ -9,7 +9,7 @@
     "pregenerate": "npm run clean",
     "generate": "gulp build",
     "generate.prod": "NODE_ENV=production npm run generate",
-    "predeploy": "npm run generate",
+    "predeploy": "npm run generate.prod",
     "deploy": "NODE_ENV=production firebase deploy"
   },
   "hexo": {
@@ -34,7 +34,9 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
-    "semantic-ui-button": "^2.2.8"
+    "semantic-ui-button": "^2.2.8",
+    "semantic-ui-popup": "^2.2.8",
+    "semantic-ui-transition": "^2.2.8"
   },
   "devDependencies": {
     "@types/del": "^2.2.32",
