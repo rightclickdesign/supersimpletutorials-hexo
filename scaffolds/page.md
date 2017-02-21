@@ -1,10 +1,13 @@
 ---
 title: {{ title }}
 date: {{ date }}
+author: Tommy Nguyen
+description: 
 layout: page
 comments: false
-author: Tommy Nguyen
 features:
   tabs: false
   hide_date: false
+markdown:
+  gfm: true
 ---

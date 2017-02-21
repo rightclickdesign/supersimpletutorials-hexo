@@ -1,16 +1,17 @@
 ---
 title: Initial git setup
-features:
-  tabs: false
-  hide_date: false
-  license: creative-commons
 date: 2017-02-20 22:44:02
 author: Tommy Nguyen
+description: Set up your git environment and editor using git config
 categories:
   - dev
 tags:
   - git
   - tools
+features:
+  tabs: false
+  hide_date: false
+  license: creative-commons
 markdown:
   gfm: false
 ---

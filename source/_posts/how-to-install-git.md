@@ -1,16 +1,17 @@
 ---
 title: How to install git
-features:
-  tabs: false
-  hide_date: false
-  license: creative-commons
 date: 2017-02-20 20:46:48
 author: Tommy Nguyen
+description: How to install git on Linux, macOS, and Windows
 categories:
   - dev
 tags:
   - git
   - tools
+features:
+  tabs: false
+  hide_date: false
+  license: creative-commons
 markdown:
   gfm: false
 ---
