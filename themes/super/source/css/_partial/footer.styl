@@ -39,3 +39,32 @@
 
 #footer-heart
     color: color-primary-blue
+
+#toTop
+    @extend $block
+    display: none
+    cursor: pointer
+    text-align: center
+    width: 36px
+    height: 36px
+    color: color-dark-blue
+    font-size: 32px
+    line-height: 32px
+    background: transparent
+    opacity: 0.8
+    bottom: 5px
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    position: fixed
+    @media mq-mobile
+        width: 28px
+        height: 28px
+        font-size: 24px
+        line-height: 24px
+    @media mq-mini
+        width: 28px
+        height: 28px
+        font-size: 24px
+        line-height: 24px
