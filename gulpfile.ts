@@ -92,7 +92,7 @@ gulp.task('compress', (cb: any) => {
 
 //gulp.task('build', ['clean', 'generate', 'compress']);
 gulp.task('build', (cb: any) => {
-    runSequence('generate', 'sanitize-permalink', 'cache-bust', cb)
+    runSequence('generate', 'sanitize-permalink', cb)
 });
 
 gulp.task('default', [])
