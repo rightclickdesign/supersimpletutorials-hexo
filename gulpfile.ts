@@ -12,6 +12,7 @@ import * as runSequence from 'run-sequence';
 /**
  * These modules currently do not have d.ts files
  */
+const cachebust = require('gulp-cache-bust');
 const minifycss = require('gulp-clean-css');
 const htmlclean = require('gulp-htmlclean');
 const imagemin = require('gulp-imagemin');
@@ -43,6 +44,12 @@ gulp.task('sanitize-permalink', () => {
     return gulp.src(["./public/content.json"])
         .pipe(replace(/(\"permalink\":\"https:\/\/supersimpletutorials.com\/.*?)(index.html)(\")/g, '$1$3'))
         .pipe(replace(/(\"path\":\".*?)(index.html)(\")/g, '$1$3'))
+        .pipe(gulp.dest('./public/'));
+});
+
+gulp.task('cache-bust', () => {
+    return gulp.src('./public/**/*.html')
+        .pipe(cachebust())
         .pipe(gulp.dest('./public/'));
 });
 
@@ -85,7 +92,7 @@ gulp.task('compress', (cb: any) => {
 
 //gulp.task('build', ['clean', 'generate', 'compress']);
 gulp.task('build', (cb: any) => {
-    runSequence('generate', 'sanitize-permalink', cb)
+    runSequence('generate', 'sanitize-permalink', 'cache-bust', cb)
 });
 
 gulp.task('default', [])
