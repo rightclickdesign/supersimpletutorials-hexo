@@ -16,11 +16,11 @@ Now that you're here, start with one of the following:
 * [Write a tutorial](/write-a-tutorial)
 * [Request a tutorial](/request)
 
-Have an awesome time. 
+Make it simple. Make it awesome.
 
 Love,
 The Super Simple Tutorials Team <i id="footer-heart" class="fa fa-heart" aria-hidden="true"></i>
 
 ---
 
-Banner photo credit: [@snapshot_factory](https://unsplash.com/@snapshot_factory)
+Photo credit: [@snapshot_factory](https://unsplash.com/@snapshot_factory)
