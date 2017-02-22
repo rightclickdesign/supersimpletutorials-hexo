@@ -3,7 +3,7 @@ title: About
 layout: page
 comments: false
 author: 
-banner: /images/about-us.jpg
+banner: /images/about-us-2.jpg
 ---
 
 We're Super Simple Tutorials. Make it simple. Make it awesome.
