@@ -1,5 +1,4 @@
 (function($){
-    var toTop = ($('#sidebar').height() - $(window).height()) + 60;
     // Caption
     $('.article-entry').each(function(i) {
         $(this).find('img').each(function() {
@@ -43,7 +42,7 @@
 
     // To Top
     $(document).on('scroll', function () {
-        if(($(this).scrollTop() > toTop) && ($(this).scrollTop() > 0)) {
+        if($(this).scrollTop()) {
             $('#toTop').fadeIn();
         } else {
             $('#toTop').fadeOut();

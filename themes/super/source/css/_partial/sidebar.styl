@@ -3,6 +3,10 @@
         column(sidebar-column)
     @media mq-tablet
         column(sidebar-column-tablet)
+    @media mq-mobile
+        html.ios 
+            overflow-x: hidden
+            -webkit-overflow-scrolling: touch
     background: color-background
     .sidebar-header
         text-align: left
