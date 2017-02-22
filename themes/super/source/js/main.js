@@ -56,7 +56,7 @@
         $('.ui.sidebar').sidebar({
             context: $('.main-content'),
             dimPage: false,
-            transition: 'push'
+            transition: 'overlay'
         }).sidebar('toggle');
     });
 

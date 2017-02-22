@@ -3,7 +3,7 @@
     <% if (theme.plugins.facebook_sdk) { %>
         <%- partial('plugin/facebook-sdk') %>
     <% } %>
-    <div class="main-content" id="container">
+    <div class="main-content pusher" id="container">
         <%- partial('common/header') %>
         <% if (theme.customize.sidebar) { %>
             <%- partial('common/sidebar', null, {cache: !config.relative_link}) %>
