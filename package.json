@@ -36,6 +36,7 @@
     "hexo-server": "^0.2.0",
     "semantic-ui-button": "^2.2.8",
     "semantic-ui-popup": "^2.2.8",
+    "semantic-ui-sidebar": "^2.2.9",
     "semantic-ui-transition": "^2.2.8"
   },
   "devDependencies": {

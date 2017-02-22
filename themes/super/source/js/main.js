@@ -52,4 +52,13 @@
         $('body, html').animate({ scrollTop: 0 }, 600);
     });
 
+    // sidebar
+    $('.sidebar-toggle').on('click', function () {
+        $('.ui.sidebar').sidebar({
+            context: $('.main-content'),
+            dimPage: false,
+            transition: 'push'
+        }).sidebar('toggle');
+    });
+
 })(jQuery);
