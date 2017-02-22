@@ -15,4 +15,4 @@ The Super Simple Tutorials Team <i id="footer-heart" class="fa fa-heart" aria-hi
 
 ---
 
-Photo credit: [@helloquence](https://unsplash.com/@helloquence)
+Photo credit: [@stickermule](https://unsplash.com/@stickermule)
