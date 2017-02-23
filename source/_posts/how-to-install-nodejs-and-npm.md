@@ -116,4 +116,4 @@ $ npm --version
 
 More info: [nodejs.org](https://nodejs.org/en/download/)
 
-Enjoy our Node adventures!
+Enjoy your Node adventures!
