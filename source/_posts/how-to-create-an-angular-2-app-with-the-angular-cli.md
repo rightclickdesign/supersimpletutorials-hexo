@@ -7,6 +7,9 @@ categories:
   - dev
 tags:
   - Angular 2
+  - npm 
+  - node
+thumbnail: /images/logos/angular.png
 features:
   license: creative-commons
 markdown:

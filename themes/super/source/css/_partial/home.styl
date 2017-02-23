@@ -9,13 +9,14 @@
     width:100%
     height:auto
 
-.article-header
+.home-header
     padding: article-padding article-padding 0
-    .article-title
+    .home-title
         display: block
         margin-bottom: 14px
+    text-align: center
 
-.article-title
+.home-title
     font-size: 2em
     color: color-default
     text-decoration: none
@@ -29,12 +30,14 @@
     @media mq-mobile
         font-size: 1.6em
 
-.article-meta
+.home-meta
     @extend $block-caption
     clearfix()
     line-height: 1.6em
+    display: flex;
+    text-align: center
+    justify-content: center;
     & > div
-        float: left
         margin-right: 10px
         .fa
             margin-right: 3px
@@ -52,14 +55,17 @@
         &:before
             content: "#"
 
-.article-entry, .article-related-posts
+.home-entry, .home-section
     @extend $base-style
     clearfix()
     color: color-default
     padding: 0 article-padding
     line-height: line-height
+    .home-buttons
+        text-align: center
+        vertical-align: center
     p
-        text-align: justify
+        text-align: center
     p, table
         line-height: line-height
         margin: line-height 0
@@ -74,6 +80,7 @@
         &:hover
             text-decoration: underline
     ul, ol, dl
+        text-align: center
         margin-top: line-height
         margin-bottom: line-height
     img, video
@@ -149,6 +156,78 @@
             width: 100%
             height: 100%
             margin-top: 0
+
+.home-section
+    position: relative
+    height: 200px
+    p 
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white
+        line-height: line-height
+        font-size: 32px
+    .home-button-section
+        width: 49%
+        height: 100%
+        position: relative
+        text-align: center
+        p
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            color: white
+            line-height: 1.2em
+            font-size: 24px
+    .home-button-section.left 
+        float: left
+    .home-button-section.right
+        float: right
+    .home-button-section.color-light-blue
+        background: color-light-blue
+        &:hover
+            background: color-light-blue-hover
+    .home-button-section.color-blue
+        background: color-blue
+        &:hover
+            background: color-primary-blue-hover
+    .home-button-section.color-lighter-blue
+        background: color-lighter-blue
+        &:hover
+            background: color-lighter-blue-hover
+    .home-button-section.color-dark-blue
+        background: color-dark-blue
+        &:hover
+            background: color-dark-blue-hover
+    .home-button-section.color-darker-blue
+        background: color-darker-blue
+        &:hover
+            background: color-darker-blue-hover
+
+.home-section.read
+    margin: 20px
+    padding: 0
+
+.home-section.alt
+    background: color-primary-blue
+    margin: 0 20px
+    &:hover
+        background: color-primary-blue-hover
+
+.home-subtitle
+    margin: auto
+    max-width: 450px
+    p
+        text-align: center
+    p, table
+        line-height: line-height
+        margin: line-height 0
 
 .article-more-link a
     display: inline-block
@@ -419,10 +498,10 @@ ol.toc
 
 /* right-to-left languages */
 .article.rtl
-    .article-title,
-    .article-entry p
+    .home-title,
+    .home-entry p
         direction: rtl
-    .article-meta > div
+    .home-meta > div
         float: right
         margin-left: 10px
         margin-right: 0

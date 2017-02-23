@@ -1,26 +1,38 @@
 ---
-title: Welcome!
-layout: static
+title: Super Simple Tutorials
+layout: home
 comments: false
 author: Tommy Nguyen
+description: We’re Super Simple Tutorials. We share simple, easy-to-follow tutorials for developers, makers, and doers.
 banner: /images/welcome-2.jpg
+markdown:
+  gfm: false
 ---
 
-Welcome to [Super Simple Tutorials](https://supersimpletutorials.com), where we share simple, easy-to-follow tutorials for developers, makers, and doers. 
+<div class="home-section alt">  
+    <a href="/tutorials" title="Go read a tutorial"><div style="width:100%;height:100%;">  
+    <p>Read a tutorial</p>  
+    </div></a>  
+</div>
 
-Sometimes, you just need the step-by-step instructions. Copy and paste. You know the drill.
+<div class="home-section read">
+    <a href="/about" title="Make it simple"><div class="home-button-section left color-light-blue">
+        <p>Make it simple</p>
+    </div>
+    </a>
+    <a href="/request" title="Request a new tutorial"><div class="home-button-section right color-dark-blue">
+        <p>Request a tutorial</p>
+    </div>
+    </a>
+</div>
 
-Now that you're here, start with one of the following:
-
-* [Read a tutorial](/tutorials)
-* [Write a tutorial](/write-a-tutorial)
-* [Request a tutorial](/request)
-
-Make it simple. Make it awesome.
-
-Love,
+<div class="home-entry" id="home-footer">
+<p>
+Love,  
 The Super Simple Tutorials Team <i id="footer-heart" class="fa fa-heart" aria-hidden="true"></i>
+</p>
 
----
+<hr />
 
-Photo credit: [@snapshot_factory](https://unsplash.com/@snapshot_factory)
+<p>Photo credit: [@snapshot_factory](https://unsplash.com/@snapshot_factory)</p>
+</div>

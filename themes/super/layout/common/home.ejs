@@ -1,0 +1,40 @@
+<% var totalReadingTime = 0 %>
+<% site.posts.each(function(post) { %>
+    <% var x = readingTime(post.content) %>
+    <% totalReadingTime += +x[0] %>
+<% }); %>
+<% var averageReadingTime = totalReadingTime / site.posts.length %>
+<% var friendlyMinute = (averageReadingTime != 1) ? 'minutes' : 'minute' %>
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %><%= (post.direction && post.direction.toLowerCase() === 'rtl' ? ' rtl' : '') %>" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        <% if (post.banner) { %>
+            <%- partial('post/banner') %>
+        <% } %>
+        <% if (post.link || post.title) { %>
+            <header class="home-header">
+                <%- partial('post/title', { class_name: 'home-title' }) %>
+                <div class="home-meta">
+                    <%- partial('post/date', { class_name: 'home-date', date_format: null }) %>
+                    <%- partial('post/category') %>
+                    <%- partial('post/tag') %>
+                    <%- partial('post/reading-time') %>
+                </div>
+            </header>
+        <% } %>
+        <%- partial('post/gallery') %>
+        <div class="home-subtitle">
+            <p>
+                Check out one of our <a href="/tutorials" title="We're just getting started!"><span class="tutorials-count"><%- site.posts.length %> simple tutorials</span></a> for developers, makers, and doers. Average reading time is about <span class="tutorials-count"><%- averageReadingTime %> <%- friendlyMinute %>.</span> Have fun!
+            </p>
+        </div>
+        
+        <%- post.content %>
+
+        <footer class="article-footer">
+            <%- partial('share/facebook-like', { post: post }) %>
+            <%- partial('share/index', { post: post }) %>
+            <%- partial('comment/counter', { post: post }) %>
+            <%- partial('post/author', { post: post }) %>
+        </footer>
+    </div>
+</article>

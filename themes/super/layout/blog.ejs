@@ -3,15 +3,16 @@
     <% var x = readingTime(post.content) %>
     <% totalReadingTime += +x[0] %>
 <% }); %>
+<% var averageReadingTime = totalReadingTime / site.posts.length %>
+<% var friendlyMinute = (averageReadingTime != 1) ? 'minutes' : 'minute' %>
 <section class="layout-wrap">
     <div class="layout-title">
         <span><%= config.blog_generator.title %></span>
     </div>
     <div class="layout-wrap-inner">
         <div>
-            Check out one of our <a href="/tutorials"><span class="tutorials-count"><%- site.posts.length %> simple tutorials</span></a> for developers, makers, and doers. Total reading time is about <span class="tutorials-count"><%- totalReadingTime %> minutes.</span> Have fun!
+            Today, we have <a href="/tutorials"><span class="tutorials-count"><%- site.posts.length %> simple tutorials</span></a>. Average reading time is about <span class="tutorials-count"><%- averageReadingTime %> <%- friendlyMinute %>.</span> Have fun!
         </div>
-
     </div>
 </section>
 

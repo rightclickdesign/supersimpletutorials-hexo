@@ -25,6 +25,9 @@
             </p>
         <% } else { %>
             <% if (!index && post.toc) { %>
+                <div class="toc-overview">
+                    <%- post.description %>
+                </div>
                 <div id="toc" class="toc-article">
                 <strong class="toc-title"><%= __('article.catalogue') %></strong>
                     <%- toc(post.content) %>

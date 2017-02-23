@@ -8,6 +8,7 @@ categories:
 tags:
   - git
   - tools
+thumbnail: /images/logos/git.png
 features:
   tabs: false
   hide_date: false
