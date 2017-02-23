@@ -10,7 +10,7 @@ markdown:
   gfm: false
 date: 2017-02-22 15:29:28
 #description: Installing Node.js and npm (the default package manager for Node.js) is super simple.
-description: Installing Node.js and npm (the default package manager for Node.js) is super simple. npm automatically gets installed. At the time of this writing, the latest LTS version is v6.10..0 which includes npm 3.10.10.
+description: Installing Node.js and npm (the default package manager for Node.js) is super simple. npm automatically gets installed. At the time of this writing, the latest LTS version is v6.10.0 which includes npm 3.10.10.
 thumbnail: /images/logos/node.png
 categories:
   - dev
