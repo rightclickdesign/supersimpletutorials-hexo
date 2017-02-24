@@ -59,7 +59,7 @@
     @extend $base-style
     clearfix()
     color: color-default
-    padding: 0 article-padding
+    padding: 0
     line-height: line-height
     .home-buttons
         text-align: center
@@ -171,10 +171,10 @@
         line-height: line-height
         font-size: 32px
     .home-button-section
-        width: 49%
-        height: 100%
         position: relative
         text-align: center
+        width: 100%
+        height: 100%
         p
             margin: 0;
             position: absolute;
@@ -187,8 +187,12 @@
             font-size: 24px
     .home-button-section.left 
         float: left
+        width: 49%
+        height: 100%
     .home-button-section.right
         float: right
+        width: 49%
+        height: 100%
     .home-button-section.color-light-blue
         background: color-light-blue
         &:hover
@@ -215,10 +219,7 @@
     padding: 0
 
 .home-section.alt
-    background: color-primary-blue
     margin: 0 20px
-    &:hover
-        background: color-primary-blue-hover
 
 .home-subtitle
     margin: auto

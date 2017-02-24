@@ -9,20 +9,24 @@ markdown:
   gfm: false
 ---
 
-<div class="home-section alt">  
-    <a href="/tutorials" title="Go read a tutorial"><div style="width:100%;height:100%;">  
-    <p>Read a tutorial</p>  
-    </div></a>  
+<div class="home-section alt">
+    <a href="/tutorials" title="Go read a tutorial">
+        <div class="home-button-section color-blue">
+            <p>Read a tutorial</p>
+        </div>
+    </a>
 </div>
 
 <div class="home-section read">
-    <a href="/about" title="Make it simple"><div class="home-button-section left color-light-blue">
-        <p>Make it simple</p>
-    </div>
+    <a href="/about" title="Make it simple">
+        <div class="home-button-section left color-light-blue">
+            <p>Make it simple</p>
+        </div>
     </a>
-    <a href="/request" title="Request a new tutorial"><div class="home-button-section right color-dark-blue">
-        <p>Request a tutorial</p>
-    </div>
+    <a href="/request" title="Request a new tutorial">
+        <div class="home-button-section right color-dark-blue">
+            <p>Request a tutorial</p>
+        </div>
     </a>
 </div>
 
